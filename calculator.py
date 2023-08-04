@@ -12,7 +12,7 @@ if __name__ == "__main__":
     expression_field.grid(row=0, column=0, columnspan=4)
 
     close_button = Button( window, text="Close", command=close_app)
-    close_button.grid(row=8, column=8, columnspan=1)
+    close_button.grid(row=8, column=8, sticky="sw")
 
 
     window.mainloop()
