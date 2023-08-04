@@ -1,5 +1,6 @@
 from tkinter import *
 from functools import partial
+from tkinter import messagebox
 
 
 def button_pressed(value):
@@ -11,7 +12,7 @@ def equal_pressed():
         result = eval(expression_field_value.get())
         expression_field_value.set(result)
     except ZeroDivisionError:
-        expression_field_value.set("Are you trying to break the universe or something?")
+        messagebox.showerror("Error", "Are you trying to break the universe? You can't divide by zero!")
 
 
 def clear_pressed():
