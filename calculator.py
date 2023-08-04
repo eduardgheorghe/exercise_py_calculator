@@ -101,4 +101,5 @@ if __name__ == "__main__":
     close_button = Button(window, text="Close", command = close_process )
     close_button.grid(row=5, column=4, padx=pad_x, pady=pad_y, sticky="ew")
 
+
     window.mainloop()
